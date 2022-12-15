@@ -6,9 +6,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <header>
+      <h1><em>Mientras tanto en Hogwarts...</em></h1>
+    </header>
+    <div id="instruction">
+      <p>Te has quedado atrapada en tu cuarto. Parece que la escuela ya no es un lugar seguro... 
+        ¿quién te ayudará?<br>
+        Decides enviar un mensaje <strong>encriptado</strong> que solo otro muggle como tú podría entender.</p>
     </div>
+    <main>
+      <section id="mensaje1">
+        <h4>Comencemos...</h4>
+        <textarea id="mensaje" cols="50" rows="5" placeholder="Teclea tu mensaje"></textarea>
+      </section>
+      <section id="desplazamiento">
+        <p>Elige el número de espacios</p>
+        <input type="number" id="offset" min="0" max="33" placeholder="0"/>
+      </section>
+      <section class="button">
+       <button id="cifrar">CIFRAR</button>
+       <button id="descifrar">DESCIFRAR</button>
+      </section>
+      <section id="mensaje2">
+        <textarea id="mensajeFin" cols="50" rows="5" readonly placeholder="Bien hecho muggle"></textarea>
+      </section>
+    </main>
+    <footer>By Isabel Román - Laboratoria 2022</footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
