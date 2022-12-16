@@ -1,0 +1,36 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0;
+    background-color: #bd4d24;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+main {
+    margin: 0%;
+    background-image: url('./room.jpg');
+    background-size: cover;   
+}
+
+#instruction {
+    text-align: center;
+    color: white;
+    padding: 10px;  
+}
+
+.container {
+    width: 400px;
+    background-color: #ebb915;
+    border-radius: 10px;
+    padding: 10px 60px;
+   
+}
+footer {
+    margin: 0%;
+    text-align: center;
+}
