@@ -1,5 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 header {
@@ -8,13 +9,13 @@ header {
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 2px;
-    padding: 20px;
+    padding: 15px;
 }
 
 main {
     margin: 0%;
     background-image: url('./room.jpg');
-    background-size: cover;   
+      
 }
 
 #instruction {
@@ -24,12 +25,22 @@ main {
 }
 
 .container {
-    width: 400px;
-    background-color: #ebb915;
+    text-align: center;
+    border: 1px solid;
     border-radius: 10px;
-    padding: 10px 60px;
-   
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #ebb915;  
 }
+
+#cifrar {
+    border-radius: 10px;
+}
+
 footer {
     margin: 0%;
     text-align: center;

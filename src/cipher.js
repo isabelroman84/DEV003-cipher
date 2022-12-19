@@ -25,27 +25,21 @@ const cipher = {
       textoCodificado += String.fromCharCode(newCode); //así se van acumulando los caracteres de la cadena
     }
     return textoCodificado;
+  },
+  decode: function (offset, string) {
+    let textoDecodificado = '';
+    let code = '';
+    let newCode = '';
+    for (let i = 0; i < string.length; i++) {
+      code = string.charCodeAt(i);
+      if (code >= 65 && code <= 90) {
+        newCode = ((code + 65 - offset) % 26 + 65);
+      } else if (code === 32) {
+        newCode = 32;
+      }
+      textoDecodificado += String.fromCharCode(newCode);
+    }
+    return textoDecodificado;
   }
 }
-//console.log(cipher.encode(3, 'ABC'));
-
-//Hasta este punto me funciona la función codificar, cuando intento agregar algo más, se desactiva
-//el keyup de las mayúsculas automáticas y ya no codifica. Por eso no pude hacer la parte del encode
-// encode: function(offset, string) {
-//let textoCodificado2 = '';
-//let code2 = '';
-//let newCode2 = '';
-//for (let i = 0; i < string.length; i++) {
-//code2 = string.charCodeAt(i);
-//if (code >= 65 && code <= 90) {
-//newCode2 += String.fromCharCode((code + 65 - offset) % 26 - 65);
-//} else if (code === 32) {
-//newCode2 = 32;
-//}
-//textoCodificado2 += String.fromCharCode(newCode2);
-//}
-//return textoCodificado;
-//}
-//}
-
 export default cipher;

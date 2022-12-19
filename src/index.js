@@ -22,11 +22,9 @@ const btnDesencriptar = document.getElementById('descifrar');
 btnDesencriptar.addEventListener('click', desencriptarMensaje);
 
 function desencriptarMensaje() {
-  const offset2 = parseInt(document.getElementById('offset').value);
-  const mensaje2 = document.getElementById('mensaje').value;
-  const mensajeFin2 = document.getElementById('mensajeFin');
-  mensajeFin.value = cipher.decode(offset2, mensaje2);
+  const offset = parseInt(document.getElementById('offset').value);
+  const mensaje = document.getElementById('mensaje').value;
+  const mensajeFin = document.getElementById('mensajeFin');
+  mensajeFin.value = cipher.decode(offset, mensaje);
 }
-
-//console.log(typeof(desencriptarMensaje));
-console.log(cipher);
+//console.log(cipher);
