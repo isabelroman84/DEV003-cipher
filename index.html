@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><em>Mientras tanto en Hogwarts...</em></h1>
+    </header>
+    <main>
+      <div id="instruction">
+        <p>Te has quedado atrapada en tu cuarto. Parece que la escuela ya no es un lugar seguro... 
+          ¿quién te ayudará?<br>
+          Decides enviar un mensaje <strong>encriptado</strong> que solo otro muggle como tú podría entender.</p>
+        </div>
+        <section class ="flex-container" id="mensaje1">
+          <h4>Comencemos...</h4>
+          <textarea id="mensaje" cols="50" rows="5" placeholder="Teclea tu mensaje"></textarea>
+          <p>Elige el número de espacios</p>
+          <input type="number" id="offset" min="0" max="33" placeholder="0"/>
+            <button id="cifrar">CIFRAR</button>
+            <button id="descifrar">DESCIFRAR</button>
+          <textarea id="mensajeFin" cols="50" rows="5" readonly placeholder="Bien hecho muggle"></textarea>
+        </section>
+      </main>
+      <script src="index.js" type="module"></script>
+      <footer>Isabel Román - Laboratoria 2022</footer>
+    </body>
+</html>
