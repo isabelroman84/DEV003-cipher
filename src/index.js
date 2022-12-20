@@ -27,4 +27,12 @@ function desencriptarMensaje() {
   const mensajeFin = document.getElementById('mensajeFin');
   mensajeFin.value = cipher.decode(offset, mensaje);
 }
+
+const btnClear = document.getElementById('clear');
+btnClear.addEventListener('click', clear);
+function clear() {
+  const textArea = document.querySelectorAll('textarea');
+  textArea.forEach(textarea => textarea.value = '');
+}
+
 //console.log(cipher);
