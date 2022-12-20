@@ -1,47 +1,57 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+body {
     margin: 0;
+    background-image: url(./room.jpg);
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    margin: 0;
-    background-color: #bd4d24;
-    color: #FFFFFF;
+    margin: 0%;
+    padding: 5px;
+    background-color: brown;
+    color: white;
+    font-size: large;
     text-align: center;
     letter-spacing: 2px;
-    padding: 15px;
-}
-
-main {
-    margin: 0%;
-    background-image: url('./room.jpg');
-      
 }
 
 #instruction {
-    text-align: center;
     color: white;
-    padding: 10px;  
-}
-
-.container {
     text-align: center;
-    border: 1px solid;
-    border-radius: 10px;
-    margin: 0;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    background-color: #ebb915;  
+    font-size: x-large;
+    padding: 5px;
 }
 
-#cifrar {
-    border-radius: 10px;
+.flex-container {
+    background-color: yellow;
+    font-weight: bold;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-sizing: border-box; 
+}
+
+#mensaje, #mensajeFin {
+    background: lightgoldenrodyellow;
+    border: 1px solid;
+    border-radius: 5px;
+    width: auto;
+}
+
+#cifrar, #descifrar {
+    border-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 footer {
-    margin: 0%;
     text-align: center;
+    color: azure;
+    padding: 20px;
+    margin-top: auto;
 }
